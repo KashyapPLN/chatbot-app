@@ -33,7 +33,7 @@ const ChatbotPopup = () => {
         <div className="w-80 h-96 bg-white rounded-lg shadow-lg flex flex-col">
           <div className="bg-blue-500 text-white px-4 py-2 flex justify-between items-center rounded-t-lg">
             <h3>Chatbot</h3>
-            <button onClick={toggleChatbot} className="text-white font-bold">
+            <button onClick={toggleChatbot} className="text-white font-bold outline-none">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
@@ -91,7 +91,7 @@ const ChatbotPopup = () => {
           <div className="p-2 border-t flex items-center">
             <input
               type="text"
-              className="flex-1 border rounded-lg p-2 text-sm"
+              className="flex-1 border rounded-lg p-2 text-sm "
               placeholder="Type a message..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
@@ -99,7 +99,7 @@ const ChatbotPopup = () => {
             />
             <button
               onClick={handleSendMessage}
-              className="ml-2 bg-white text-blue-500 px-0 py-0 rounded-lg"
+              className="ml-2 bg-white text-blue-500 px-0 py-0 rounded-lg outline-none"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
